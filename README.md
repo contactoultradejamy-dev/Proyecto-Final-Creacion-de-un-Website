@@ -17,4 +17,8 @@ Flora Time combina tres funciones fundamentales:
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+## Como instalarlo
+
+Para instalar este proyecto, es tan sencillo como simplemente descargando el archivo zip y descomprimiendolo en tus archivos. Despues de eso puedes abrir el archivo **homepage.html** y explorar este proyecto.
+
 Este proyecto fue desarrollado como proyecto final para el curso **COMP2051: Web Development Client-Side (Front-End)**
