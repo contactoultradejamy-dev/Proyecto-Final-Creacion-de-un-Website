@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Time | Finalizar Compra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="container nav-container">
+            <a href="homepage.html" class="logo">
+                <img src="imagenes/logo.png" alt="Flora Time Logo" width="30">
+            </a>
+            <a href="homepage.html" class="btn btn-sm btn-outline">Cancelar</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title center-text" style="margin-top: 20px;">Finalizar Suscripción</h2>
+
+        <div class="checkout-grid">
+
+            <section class="checkout-form glass-panel">
+                <h3><i class="fas fa-credit-card"></i> Datos de Pago</h3>
+                <form id="payment-form">
+
+                    <div class="form-section">
+                        <h4>Información Personal</h4>
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" placeholder="juan@ejemplo.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Tarjeta de Crédito / Débito</h4>
+                        <div class="form-group">
+                            <label for="card-number">Número de Tarjeta</label>
+                            <div class="input-icon-wrapper">
+                                <input type="text" id="card-number" placeholder="0000 0000 0000 0000" maxlength="19"
+                                    required>
+                                <i class="far fa-credit-card icon-inside"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Vencimiento</label>
+                                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvc">CVC</label>
+                                <input type="text" id="cvc" placeholder="123" maxlength="3" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">Pagar y Suscribirse</button>
+                    <p class="secure-notice"><i class="fas fa-lock"></i> Pagos encriptados y seguros</p>
+                </form>
+            </section>
+
+            <section class="order-summary glass-panel">
+                <h3>Resumen del Pedido</h3>
+
+                <div class="summary-item">
+                    <div class="item-info">
+                        <span class="item-name">Plan Bosque (Premium)</span>
+                        <span class="item-desc">Facturación mensual</span>
+                    </div>
+                    <span class="item-price">$4.99</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$4.99</span>
+                </div>
+                <div class="summary-row">
+                    <span>Impuestos (IVU)</span>
+                    <span>$0.57</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="summary-total">
+                    <span>Total a Pagar</span>
+                    <span>$5.56</span>
+                </div>
+
+                <div class="guarantee-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Garantía de devolución de 30 días si no estás satisfecho.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+
+</html>

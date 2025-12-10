@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Time | Focus Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="container nav-container">
+            <a href="homepage.html" class="logo">
+                <img src="imagenes/logo.png" alt="Flora Time Logo" width="30">
+            </a>
+            <a href="homepage.html" class="btn btn-sm btn-outline">Salir</a>
+        </div>
+    </header>
+
+    <main class="container app-grid">
+
+        <div class="left-column">
+
+            <section class="timer-card glass-panel">
+                <div class="timer-modes">
+                    <button class="mode-btn active" data-time="25">Focus</button>
+                    <button class="mode-btn" data-time="5">Short Break</button>
+                    <button class="mode-btn" data-time="15">Long Break</button>
+                </div>
+
+                <div class="timer-display">
+                    <h1 id="time-display">25:00</h1>
+                </div>
+
+                <div class="timer-controls">
+                    <button id="start-btn" class="btn btn-primary btn-lg">Iniciar</button>
+                    <button id="reset-btn" class="btn btn-outline btn-lg">Reiniciar</button>
+                </div>
+            </section>
+
+            <section class="growth-card glass-panel">
+                <h3>Tu Bosque Virtual</h3>
+                <div class="tree-container">
+                    <div id="tree-icon" class="tree-stage">🌱</div>
+                </div>
+                <div class="progress-info">
+                    <p>Sesiones completadas: <span id="session-count">0</span></p>
+                    <div class="progress-bar-bg">
+                        <div id="progress-fill" class="progress-bar-fill"></div>
+                    </div>
+                    <p class="motivation-text" id="motivation">¡Planta tu primera semilla!</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <section class="sound-panel glass-panel">
+                <h3>Ambiente Sonoro</h3>
+                <div class="sound-grid">
+
+                    <div class="sound-card">
+                        <div class="sound-icon"><i class="fas fa-cloud-rain"></i> 🌧️</div>
+                        <div class="sound-controls">
+                            <label>Lluvia</label>
+                            <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume-slider"
+                                data-sound="rain">
+                            <button class="toggle-sound" data-sound="rain">Play</button>
+                        </div>
+                        <audio id="audio-rain" loop src="sonidos/lluvia.mp3"></audio>
+                    </div>
+
+                    <div class="sound-card">
+                        <div class="sound-icon"><i class="fas fa-tree"></i> 🌳</div>
+                        <div class="sound-controls">
+                            <label>Bosque</label>
+                            <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume-slider"
+                                data-sound="forest">
+                            <button class="toggle-sound" data-sound="forest">Play</button>
+                        </div>
+                        <audio id="audio-forest" loop src="sonidos/bosque.mp3"></audio>
+                    </div>
+
+                    <div class="sound-card">
+                        <div class="sound-icon"><i class="fas fa-fire"></i> 🔥</div>
+                        <div class="sound-controls">
+                            <label>Fuego</label>
+                            <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume-slider"
+                                data-sound="fire">
+                            <button class="toggle-sound" data-sound="fire">Play</button>
+                        </div>
+                        <audio id="audio-fire" loop src="sonidos/fuego.mp3"></audio>
+                    </div>
+
+                    <div class="sound-card">
+                        <div class="sound-icon"><i class="fas fa-coffee"></i> ☕</div>
+                        <div class="sound-controls">
+                            <label>Café</label>
+                            <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume-slider"
+                                data-sound="coffee">
+                            <button class="toggle-sound" data-sound="coffee">Play</button>
+                        </div>
+                        <audio id="audio-coffee" loop src="sonidos/cafe.mp3"></audio>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
