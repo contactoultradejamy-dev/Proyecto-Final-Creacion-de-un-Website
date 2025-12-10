@@ -1,6 +1,6 @@
 # Flora Time
 
-![Flora Time Banner](imagenes/logo.png)
+![Flora Time Banner](imagenes/Logo.png)
 
 ## Introducción
 
